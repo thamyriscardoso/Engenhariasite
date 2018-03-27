@@ -3,8 +3,8 @@
   "short_name":"Cantinho dos Engordes",
   "theme_color": "#2196f3",
   "background_color": "#933f4c",
-  "display": "standalone",
-  "start_url": "https: //thamyriscardoso.github.io/Engenhariasite/Trabalho/index.html",
+  "display": "fullscreen",
+  "start_url": "https://thamyriscardoso.github.io/Engenhariasite/Trabalho/index.html",
   "icons": [
       {
           "src": "images/icons/icon-72x72.png",
