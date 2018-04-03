@@ -34,3 +34,14 @@ self.addEventListener('fetch', function (event) {
    })
  );
 });
+ 
+ caches.open('example-cache').then(function(cache) {
+ cache.add('/example-file.html');
+ });
+ caches.open('example-cache').then(function(cache) {
+   cache.matchAll('/images/').then(function(response) {
+     response.forEach(function(element, index, array) {
+      cache.delete(element);
+    });
+ });
+})
