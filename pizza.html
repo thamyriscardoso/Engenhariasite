@@ -1,0 +1,305 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cantinho dos Engordes</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+    <link rel="stylesheet" href="css/estilo.css">
+</head>
+<body>
+    <nav class="navbar navbar-default" role="navigation">
+        <div class="container">
+            <div class="navbar-header">
+                <button class="navbar-toggle" type="button" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1"> 
+                        <span class="sr-only">Toggle navigation</span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                </button> 
+                <a class="navbar-brand" href="index.html">Cantinho dos Engordes</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                    <ul class="nav navbar-nav">
+                        <li class="active"><a href="index.html">Home</a></li>
+                        <li class="dropdown">
+                            <a href="produtos.html" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Produtos<span class="caret"></span></a>
+                            <ul class="dropdown-menu" role="menu">
+                                <li><a href="lanches.html">Lanches</a></li>
+                                <li><a href="pizza.html">Pizza</a></li>
+                                <li><a href="acompanhamentos.html">Acompanhamentos</a></li>
+                                <li><a href="bebidas.html">Bebidas</a></li>
+                            </ul>
+                        </li>       
+                        <li><a href="promocoes.html">Promoções</a></li>
+                        <li><a href="contatos.html">Contato</a></li>
+                        <li><a href="fotos.html">Fotos</a></li>
+                    </ul>
+                    <form class="navbar-form navbar-right" role="search">
+                        <div class="form-group"><input class="form-control" type="text" placeholder="Pesquisar" /></div>
+                        <button class="btn btn-default" type="submit">Pesquisar</button>
+                    </form>
+               </div>
+            </div>
+        </nav>
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Pizzas</div>
+                <div class="col-xs-3 col-md-3">Pequena-25.00</div>
+                <div class="col-xs-3 col-md-3">Médio-35.00</div>
+                <div class="col-xs-3 col-md-3">Grande-45.00</div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Filé com Fritas</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number1" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number2" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number3" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Filé</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number4" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number5" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number6" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Frango</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number7" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number8" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number9" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Alho e Óleo</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number10" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number11" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number12" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Quatro Queijos</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number13" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number14" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number15" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Lombo</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number16" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number17" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number18" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Calabresa</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number19" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number20" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number21" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Mussarela</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number22" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number23" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number24" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Portuguesa</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number25" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number26" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number27" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Strogonoff de Carne</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number28" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number29" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number30" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Strogonoff de Frango</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number31" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number32" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number33" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Frango com Catupiry</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number34" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number35" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number36" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Atum</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number37" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number38" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number39" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Charge</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number40" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number41" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number42" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Chocolate e Morango</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number43" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number44" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number45" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Brigadeiro</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number46" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number47" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number48" type="number" min="1" max="20">
+               </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Prestígio</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number49" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number50" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number51" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Chocolate Branco</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number52" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number53" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number54" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Dois Amores</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number55" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number56" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number57" type="number" min="1" max="20">
+                </div>
+            </div>
+            <div class="row">
+                <div class="col-xs-3 col-md-3">Chocolate e MM'S</div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number58" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number59" type="number" min="1" max="20">
+                </div>
+                <div class="col-xs-3 col-md-3">
+                    <input id="number60" type="number" min="1" max="20">
+                </div>
+            </div>
+            <a href="cadastro.html" class="btn btn-primary btn-lg active" role="button" aria-pressed="true">Finalizar a compra</a>
+        </div>
+    <footer class="footer">
+        <p class="text-muted"> © 2018 Copyright Text</p>
+    </footer>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    
+    
+</body>
+
+</html>
