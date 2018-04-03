@@ -47,4 +47,4 @@ caches.open('example-cache').then(function(cache) {
        cache.delete(element);
      });
   });
-});
+})
