@@ -8,23 +8,25 @@ self.addEventListener('install', function (event) {
    'css/estilo.css',
    '/app.js',
    'manifest.js'
- ]);
-})
+   ]);
+  })
+ )
+});
 
 var CACHE_NAME = 'static-v1';
   self.addEventListener('activate', function activator(event) {
-   event.waitUntil(
+  event.waitUntil(
     caches.keys().then(function (keys) {
-     return Promise.all(keys
-      .filter(function (key) {
-       return key.indexOf(CACHE_NAME) !== 0;
-      })
-     .map(function (key) {
-        return caches.delete(key);
-      })                 
-    );
-  })
- );
+      return Promise.all(keys
+        .filter(function (key) {
+        return key.indexOf(CACHE_NAME) !== 0;
+        })
+        .map(function (key) {
+            return caches.delete(key);
+          })                 
+      );
+    })
+  );
 });
  
 self.addEventListener('fetch', function (event) {
