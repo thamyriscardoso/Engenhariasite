@@ -10,10 +10,7 @@ self.addEventListener('install', function (event) {
     '/manifest.js',
     '/vendor.js',
    ]);
-  })
- )
-});
-
+})
 var CACHE_NAME = 'static-v1';
   self.addEventListener('activate', function activator(event) {
   event.waitUntil(
