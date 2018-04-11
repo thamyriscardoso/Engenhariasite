@@ -1,4 +1,5 @@
-const CACHE_NAME = 'engenharia-site-1';
+
+const CACHE_NAME = 'engenharia-site';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
@@ -38,7 +39,8 @@ self.addEventListener('install', function (event) {
                 '/Engenhariasite/js/bootstrap.min.js',
                 '/Engenhariasite/js/jquery.min.js',
                 '/Engenhariasite/js/main.js',
-                '/Engenhariasite/js/npm.js',
+                '/Engenhariasite/js/npm.js,
+                'Engenhariasite/sw.js',
             ])
         })
     )
