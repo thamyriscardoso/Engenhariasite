@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cantinho';
+const CACHE_NAME = 'Engenhariasite';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
