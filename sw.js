@@ -1,6 +1,4 @@
-
 const CACHE_NAME = 'engenharia-site';
-
 self.addEventListener('install', function (event) {
     event.waitUntil(
         caches.open(CACHE_NAME).then(function (cache) {
