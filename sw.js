@@ -1,4 +1,4 @@
-const CACHE_NAME = 'Engenhariasite-1';
+const CACHE_NAME = 'Engenharia-site-1';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
@@ -43,26 +43,31 @@ self.addEventListener('install', function (event) {
         })
     )
 });
-
-self.addEventListener('activate', function activator(event) {
+self.addEventListener('install', function (event) {
+    var offlinePage = new Request('offline.html');
     event.waitUntil(
-        caches.keys().then(function (keys) {
-            return Promise.all(keys
-                .filter(function (key) {
-                    return key.indexOf(CACHE_NAME) !== 0;
-                })
-                .map(function (key) {
-                    return caches.delete(key);
-                })
-            );
-        })
-    );
+        fetch(offlinePage).then(function (response) {
+            return caches.open('pwabuilder-offline').then(function (cache) {
+                console.log('[PWA Builder] Cached offline page during Install' + response.url);
+                return cache.put(offlinePage, response);
+            });
+        }));
 });
+
 
 self.addEventListener('fetch', function (event) {
     event.respondWith(
-        caches.match(event.request).then(function (cachedResponse) {
-            return cachedResponse || fetch(event.request);
-        })
-    );
+        fetch(event.request).catch(function (error) {
+            console.error('[PWA Builder] Network request Failed. Serving offline page ' + error);
+            return caches.open('pwabuilder-offline').then(function (cache) {
+                return cache.match('offline.html');
+            });
+        }));
+});
+
+self.addEventListener('refreshOffline', function (response) {
+    return caches.open('pwabuilder-offline').then(function (cache) {
+        console.log('[PWA Builder] Offline page updated from refreshOffline event: ' + response.url);
+        return cache.put(offlinePage, response);
+    });
 });
