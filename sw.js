@@ -39,7 +39,7 @@ self.addEventListener('install', function (event) {
                 '/Engenhariasite/js/bootstrap.min.js',
                 '/Engenhariasite/js/jquery.min.js',
                 '/Engenhariasite/js/main.js',
-                '/Engenhariasite/js/npm.js,
+                '/Engenhariasite/js/npm.js',
                 'Engenhariasite/sw.js'
             ])
         })
