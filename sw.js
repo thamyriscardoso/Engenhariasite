@@ -1,4 +1,4 @@
-const CACHE_NAME = 'cantinho-dos-engordes';
+const CACHE_NAME = 'cantinho';
 
 self.addEventListener('install', function (event) {
     event.waitUntil(
