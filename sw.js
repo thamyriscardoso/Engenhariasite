@@ -29,7 +29,7 @@ self.addEventListener('install', function (event) {
                     '/Engenhariasite/css/bootstrap.min.css',
                     '/Engenhariasite/css/jumbotron-narrow.css',
                     '/Engenhariasite/css/signin.css',
-                    '/Engenhariasite/img/burguer.png',
+                    '/Engenhariasite/img/burger.png',
                     '/Engenhariasite/img/carne.png',
                     '/Engenhariasite/img/fritas.png',
                     '/Engenhariasite/img/lanche.jpg',
