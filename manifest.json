@@ -2,9 +2,9 @@
   "name":"Cantinho dos Engordes",
   "short_name":"Cantinho dos Engordes",
   "theme_color": "black",
-  "background_color": "#6E6E6E",
+  "background_color": "#848484",
   "display": "fullscreen",
-  "start_url": "https://thamyriscardoso.github.io/Engenhariasite/Trabalho/index.html",
+  "start_url": "/Engenhariasite/",
   "icons": [
       {
           "src": "images/icons/icon-72x72.png",
