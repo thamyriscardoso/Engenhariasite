@@ -43,6 +43,7 @@ self.addEventListener('install', function (event) {
                     '/Engenhariasite/sw.js'
             ]);
         });
+      })
     );
 });
 self.addEventListener('fetch', function(event) {
