@@ -3,6 +3,11 @@ div.row{
     border-style: none;
     border-color: black;
 }
+#map {
+    height: 400px;
+    width: 100%;
+}
+
 #number {
     width: 2em;
     height: 1.5em;
