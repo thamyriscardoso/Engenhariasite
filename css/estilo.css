@@ -15,12 +15,12 @@ input[type='number']{
 .footer {
     color:#050505;
     border-top: 1px solid #e5e5e5;
-    background: #BDBDBD;
+    background: #BBBABA;
     width: 100%;
     height: 60px;   
 }
 .navbar-default {
-    background: #BDBDBD;
+    background: #BBBABA;
     color:#050505;
 }
 .navbar-default .navbar-brand {
@@ -36,4 +36,3 @@ input[type='number']{
 #bt{
     top: -20px;
 }
-#BBBABA
